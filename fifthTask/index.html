@@ -1,0 +1,313 @@
+<!DOCTYPE html> <!--Объявляет тип документа, определяя HTML5.-->
+<html lang="ru"> <!--Открывает тег html, задавая основной язык документа как русский (ru).-->
+<head>
+  <meta charset="UTF-8"> <!--Задает кодировку символов как UTF-8, поддерживая множество языков и символов.-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Устанавливает настройки для адаптивности страницы на мобильных устройствах, масштабируя ее под размер экрана.-->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Осуществляет предварительное подключение к шрифтам, что ускоряет их загрузку.-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <!--Подключает шрифт Inter с Google Fonts.-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!--Подключает Bootstrap CSS для стилизации элементов и файл style.css для добавления собственных стилей.-->
+  <script src="scripts/calculator.js"></script>
+  <title>AЯRT</title> <!--Задает заголовок страницы, отображаемый в браузере.-->
+  <link rel = "icon" href = "./images/icon.jpg" type = "jpg/png"> <!--Задает иконку, отображаемую в браузере.-->
+</head>
+
+
+
+<!--Навигация в меню-->
+<body> <!-- Начало тела страницы -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light"> <!-- Навигационная панель с адаптивной шириной, светлым фоном и светлыми элементами -->
+      <div class="container"> <!-- Контейнер для центрирования содержимого навигации -->
+        
+        <!-- Кнопка для раскрытия навигационного меню на мобильных устройствах -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span> <!-- Иконка-кнопка для отображения иконки гамбургера -->
+        </button>
+        
+        <!-- Скрываемое меню навигации, разворачивающееся при нажатии кнопки на мобильных устройствах -->
+        <div class="collapse navbar-collapse" id="navmenu">
+          
+          <!-- Список навигационных элементов, выровненный по правому краю с помощью класса ms-auto -->
+          <ul class="navbar-nav ms-auto">
+            
+            <li class="nav-item"> <!-- Пункт меню -->
+              <a href="https://vk.com/anorllondo" class="nav-link">VK</a> <!-- Ссылка на VK с классом для стилизации -->
+              
+              <!-- Закомментированное изображение логотипа VK (можно использовать вместо текста ссылки) -->
+              <!-- <img class="navbar-logo" src="./images/вк.webp" alt=""> -->
+            </li>
+            
+            <li class="nav-item"> <!-- Пункт меню -->
+              <a href="https://www.instagram.com/rrimekisho/" class="nav-link">Instagram</a> <!-- Ссылка на Instagram -->
+              
+              <!-- Закомментированное изображение логотипа Instagram -->
+              <!-- <img class="navbar-logo" src="./images/яндекс.png" alt=""> -->
+            </li>
+            
+            <li class="nav-item"> <!-- Пункт меню -->
+              <a href="https://t.me/llikantropia" class="nav-link">Telegram</a> <!-- Ссылка на Telegram -->
+              
+              <!-- Закомментированное изображение логотипа Telegram -->
+              <!-- <img class="navbar-logo" src="./images/youtube.svg" alt=""> -->
+            </li>
+            
+          </ul> <!-- Конец списка навигационных элементов -->
+        </div> <!-- Конец скрываемого меню навигации -->
+      </div> <!-- Конец контейнера навигационной панели -->
+    </nav> <!-- Конец навигационной панели -->
+
+
+
+    <!-- Header -->
+    <header class="header-section"> <!-- Блок-заголовок для верхней части страницы с классом "header-section" для стилизации -->
+        <div class="overlay"></div> <!-- Полупрозрачный наложенный элемент, часто используемый для затемнения фона и улучшения контраста текста -->
+        
+        <!-- Контейнер для центрирования и стилизации содержимого заголовка, с выравниванием текста по центру и светлым цветом текста -->
+        <div class="container text-center text-light header-content">
+          
+          <!-- Заголовок первой степени с классами для стилизации: "display-4" увеличивает размер, "header-title" задает уникальные стили -->
+          <h1 class="display-4 header-title">AЯRT</h1>
+          
+          <!-- Параграф с описанием, используется класс "lead" для увеличенного шрифта, чтобы сделать текст выделяющимся -->
+          <p class="lead">"Акварели" уже на всех площадках!</p>
+        </div> <!-- Конец контейнера для содержимого заголовка -->
+    </header> <!-- Конец блока-заголовка -->
+
+    <section class="bg-black text-light"> <!-- Раздел секции с фоном черного цвета и светлым текстом для контраста -->
+        <div class="container"> <!-- Контейнер для центрирования и ограничения ширины содержимого секции -->
+          <h4 class="p-5 text-center">Знакомься с релизами и выбирай любимый</h4> <!-- Заголовок 4-го уровня с отступами и центрированием текста -->
+        </div> <!-- Конец контейнера -->
+    </section> <!-- Конец секции -->
+
+
+
+    <div class="section-container"> <!-- Контейнер для данной секции, используемый для группировки и стилизации контента -->
+        <!-- Links -->
+        <section class="bg-light p-4" id="links-section"> <!-- Секция с фоновым светлым цветом и отступом 4, уникально идентифицируемая id="links-section" -->
+          <div class="container"> <!-- Контейнер Bootstrap для центрирования и ограничения ширины содержимого -->
+            <div class="row justify-content-center"> <!-- Контейнер для создания строки с выравниванием по центру -->
+              <div class="col-lg-10 text-center"> <!-- Колонка шириной до 5/12 на больших экранах, центрирование текста -->
+                <ul class="list-group"> <!-- Начало нумерованного списка для ссылок -->
+                  <h1>Музыкальные видео</h1> <!-- Заголовок списка с текстом "Ссылки" -->
+                  <!-- Вложенный нумерованный список с музыкальными ссылками -->
+                  <li class="list-group-item">
+                    <ol class="list-group list-group-numbered"> <!-- Начало нумерованного списка -->
+                      <li class="list-group-item"><a class="link-opacity-75-hover" href="./soon/Акварели/Акварели.html" title="Акварели">Акварели</a></li> <!-- Ссылка на видео с заголовком -->
+                      <li class="list-group-item"><a class="link-opacity-75-hover" href="./soon/От любви до ненависти/От любви до ненавести.html" title="От любви до ненавести">От любви до ненависти</a></li>
+                    </ol>
+                  </li>
+    
+                  <!-- Ссылка на FTP с авторизацией -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section> <!-- Конец секции -->
+    </div> <!-- Конец контейнера -->
+
+
+
+    <!-- Table -->
+    <section class="bg-light p-4" id="table-section"> <!-- Секция с таблицей, со светлым фоном и отступом 4, идентифицируемая id="table-section" -->
+        <hr class="border border-dark border-2 opacity-50"> <!-- Горизонтальная линия с темной рамкой, толщиной 2px и прозрачностью 50% для визуального разделения -->
+        <div class="container-fluid order-sm-1"> <!-- Контейнер Bootstrap, который занимает всю ширину экрана, с порядком отображения для мобильных -->
+          <div class="row justify-content-center"> <!-- Строка, выравненная по центру, для размещения содержимого -->
+            <div class="col-lg-4 col-sm-12"> <!-- Колонка, занимающая 4/12 ширины экрана на больших экранах и всю ширину на маленьких экранах -->
+              <h1 class="text-center">Прослушивания</h1> <!-- Заголовок таблицы, выравненный по центру -->
+              
+              <div class="table-responsive-sm"> <!-- Контейнер с адаптивностью для таблицы на маленьких экранах -->
+                <table class="table table-bordered"> <!-- Таблица с рамками вокруг каждой ячейки -->
+                  <thead> <!-- Заголовок таблицы -->
+                    <tr> <!-- Строка заголовков -->
+                      <th scope="col">Релиз</th> <!-- Заголовок столбца для названия релиза -->
+                      <th scope="col">VK Музыка</th> <!-- Заголовок столбца для прослушиваний на VK Музыке -->
+                      <th scope="col">Яндекс Музыка</th> <!-- Заголовок столбца для прослушиваний на Яндекс Музыке -->
+                      <th scope="col">Apple Music</th> <!-- Заголовок столбца для прослушиваний на Apple Music -->
+                    </tr>
+                  </thead>
+                  <tbody> <!-- Тело таблицы, где размещены данные -->
+                    <tr> <!-- Строка с данными о релизе "С тобой" -->
+                      <th scope="row">С тобой</th> <!-- Ячейка с названием релиза "С тобой" -->
+                      <td>10243</td> <!-- Прослушивания на VK Музыке для этого релиза -->
+                      <td>12504</td> <!-- Прослушивания на Яндекс Музыке для этого релиза -->
+                      <td>3941</td> <!-- Прослушивания на Apple Music для этого релиза -->
+                    </tr>
+                    <tr> <!-- Строка с данными о релизе "Акварели" -->
+                      <th scope="row">Акварели</th>
+                      <td>8843</td>
+                      <td>10321</td>
+                      <td>1921</td>
+                    </tr>
+                    <tr> <!-- Строка с данными о релизе "Снова" -->
+                      <th scope="row">Снова</th>
+                      <td>8319</td>
+                      <td>9981</td>
+                      <td>1509</td>
+                    </tr>
+                    <tr> <!-- Строка с данными о релизе "От любви до ненависти" -->
+                      <th scope="row">От любви до ненависти</th>
+                      <td>9832</td>
+                      <td>11321</td>
+                      <td>2543</td>
+                    </tr>
+                  </tbody>
+                </table> <!-- Конец таблицы -->
+              </div> <!-- Конец адаптивного контейнера для таблицы -->
+            </div> <!-- Конец колонки -->
+          </div> <!-- Конец строки -->
+        </div> <!-- Конец контейнера -->
+      </section> <!-- Конец секции -->
+
+      
+     
+      <!-- Form -->
+     <section class="bg-light p-4" id="form-section"> <!-- Секция с формой, светлый фон и отступы, идентифицируемая с помощью id="form-section" -->
+        <hr class="border border-dark border-2 opacity-50"> <!-- Разделительная линия с темной рамкой и полупрозрачностью -->
+        <div class="container"> <!-- Контейнер Bootstrap для центрирования и выравнивания содержимого -->
+          <div class="row justify-content-center"> <!-- Центрирование содержимого в строке -->
+            <div class="col"> <!-- Колонка, которая занимает всю ширину -->
+              <h1 class="text-center pb-3">Форма</h1> <!-- Заголовок "Форма" с выравниванием по центру и нижним отступом -->
+      
+              <form action="submitURL" method="POST"> <!-- Форма, которая отправляется методом POST на URL submitURL -->
+                <label for="name">ФИО:</label> <!-- Метка для поля ввода ФИО -->
+                <input type="text" id="name" name="name" value="" pattern="[А-Яа-я]*?\s[А-Яа-я]*?\s[А-Яа-я]*" required> <!-- Поле ввода для ФИО, обязательное для заполнения, с шаблоном для трех слов на кириллице -->
+                <br><br>
+            
+                <label for="phone">Телефон:</label> <!-- Метка для поля ввода телефона -->
+                <input type="tel" id="phone" name="phone" minlength="12" value="+7" placeholder="+7-(***)-***-**-**" pattern="\+[7][0-9]{10}" required> <!-- Поле ввода телефона с минимальной длиной 12 символов, шаблоном для номера в формате "+7**********" -->
+                <br><br>
+            
+                <label for="email">E-mail:</label> <!-- Метка для поля ввода email -->
+                <input type="email" id="email" name="email" required> <!-- Поле ввода для email, обязательное для заполнения -->
+                <br><br>
+            
+                <label for="birthdate">Дата рождения:</label> <!-- Метка для поля ввода даты рождения -->
+                <input type="date" id="birthdate" name="birthdate" max="2024-09-27" required> <!-- Поле ввода для даты рождения, с максимальной допустимой датой 2024-09-27 -->
+                <br><br>
+            
+                <label>Пол:</label> <!-- Метка для выбора пола -->
+                <input type="radio" id="male" name="gender" value="male"> <!-- Радиокнопка для выбора мужского пола -->
+                <label for="male">Мужской</label>
+                <input type="radio" id="female" name="gender" value="female"> <!-- Радиокнопка для выбора женского пола -->
+                <label for="female">Женский</label>
+                <br><br>
+            
+                <label for="languages">Любимый трек:</label> <!-- Метка для выбора любимого трека -->
+                <select id="languages" name="languages" multiple> <!-- Выпадающий список с множественным выбором -->
+                  <!-- <option value="Pascal">Pascal</option> -->
+                  <option value="C">С тобой</option> <!-- Опция для выбора трека "С тобой" -->
+                  <option value="C++">Снова</option>
+                  <option value="JavaScript">Акварели</option>
+                  <option value="PHP">От любви до ненависти</option>
+                  <option value="Python">Танец воспоминаний</option>
+                  <option value="Java">Ладони говорят за нас</option>
+                  <option value="Haskell">ЕГЭ</option>
+                  <!-- <option value="Clojure">Clojure</option>
+                  <option value="Prolog">Prolog</option>
+                  <option value="Scala">Scala</option> -->
+                </select>
+                <br><br>
+            
+                <label for="bio">Биография:</label> <!-- Метка для поля ввода биографии -->
+                <textarea id="bio" name="bio" rows="5" cols="25" minlength="50"></textarea> <!-- Текстовая область для ввода биографии, минимум 50 символов -->
+                <br><br>
+            
+                <input type="checkbox" id="contract" name="contract"> <!-- Чекбокс для подтверждения ознакомления с контрактом -->
+                <label for="contract">С контрактом ознакомлен(а)</label>
+                <br><br>
+            
+                <button type="submit">Сохранить</button> <!-- Кнопка для отправки формы -->
+              </form> <!-- Конец формы -->
+            </div> <!-- Конец колонки -->
+          </div> <!-- Конец строки -->
+        </div> <!-- Конец контейнера -->
+      </section> <!-- Конец секции -->
+
+
+    <!-- Раздел для мерча -->
+    <section class="section-padding bg-black">
+        <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-center">
+            <div class="row text-start">
+                <!-- Заголовок раздела -->
+                <h1 class="headline pb-5 text-white">ПРИОБРЕТАЙТЕ МЕРЧ</h1>
+    
+                <div class="col-lg">
+                    <form class="mx-auto" id="merch-form">
+  
+            <!-- Выпадающий список для выбора товара -->
+            <div class="mb-3">
+              <label for="product" class="form-title text-black">Выберите мерч</label>
+              <select id="product" name="product" class="form-control">
+                <!-- Пункты списка с ценой и ссылкой на локальные изображения товаров -->
+                <option value="4500" data-image="./images/худи.png">Зип-худи "AЯRT" — 4500Р</option>
+                <option value="3500" data-image="./images/лонгслив.png">Лонгслив "AЯRT" — 3500Р</option>
+                <option value="2000" data-image="./images/футболка.png">Футболка "AЯRT" — 2000Р</option>
+              </select>
+            </div>
+  
+            <!-- Поле ввода для указания количества товара -->
+            <div class="mb-3">
+              <label for="quantity" class="form-title text-black">Количество товара</label>
+              <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Введите количество">
+            </div>
+  
+            <!-- Контейнер для изображения товара, с анимацией появления -->
+            <div class="image-container mb-4" data-aos="fade-in">
+              <!-- Динамически изменяемое изображение выбранного товара -->
+              <img id="product-image" class="img-fluid" src="./images/худи.png" alt="Изображение товара">
+            </div>
+  
+            <!-- Кнопка для расчета стоимости -->
+            <button id="calculate" class="btn btn-primary">Рассчитать стоимость</button>
+  
+            <!-- Поле для отображения результата расчета -->
+            <p id="result" class="mt-3"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const productSelect = document.getElementById('product');
+      const productImage = document.getElementById('product-image');
+  
+      // Изменение изображения при выборе товара
+      productSelect.addEventListener('change', function() {
+        const selectedOption = productSelect.options[productSelect.selectedIndex];
+        const imageSrc = selectedOption.getAttribute('data-image'); // получаем путь к изображению из атрибута data-image
+        productImage.src = imageSrc; // меняем src изображения на выбранное
+      });
+    });
+  </script>
+  
+
+
+      <!-- Footer -->
+      <footer class="bg-black py-4 mt-0"> <!-- Тег <footer> задает нижнюю часть страницы с темным фоном, отступами сверху и снизу (py-4) и отступом сверху (mt-4) -->
+        <div class="container text-light text-center"> <!-- Контейнер Bootstrap для центрирования и выравнивания текста по центру с использованием светлого текста -->
+          <p class="display-5 mb-3">AЯRT</p> <!-- Текст "ART" крупным шрифтом благодаря классу display-5 с нижним отступом (mb-3) -->
+          <small class="text-white-50">&copy; Copyright</small> <!-- Надпись о копирайте, уменьшенная и полупрозрачная (text-white-50) -->
+        </div>
+      </footer>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+      <!-- Подключение Bootstrap JavaScript с проверкой целостности и анонимным доступом для использования интерактивных компонентов -->
+</body>
+</html>
+      
+
+
+
+
+
+    
+    
+    
+
+    
+    
